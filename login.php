@@ -2,32 +2,13 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-
+	<?php include "topo.php"; ?>
     <title>E-Phone Imports - Login</title>
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/media_screen.css">
-	
-    <link rel="stylesheet" type="text/css" href="css/font-family.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
 	<div class="conteudo site">
 		<?php include "menu.php"; ?>
-		
-		<div class="conteudo logo-imagem">
-			<img src="img/logo.png">
-		</div>
-		
 		<div class="conteudo site-section">
 			<div class="conteudo registro">
 				<h1>Registrar</h1>

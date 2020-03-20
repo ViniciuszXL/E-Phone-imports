@@ -41,6 +41,12 @@ img {
     text-align: center;
 }
 
+/* COLORS */
+.color-0 { color: #000000; } .color-1 { color: #0000AA; } .color-2 { color: #00AA00; } .color-3 { color: #00AAAA; }
+.color-4 { color: #AA0000; } .color-5 { color: #AA00AA; } .color-6 { color: #FFAA00; } .color-7 { color: #AAAAAA; }
+.color-8 { color: #555555; } .color-9 { color: #5555FF; } .color-a { color: #55FF55; } .color-b { color: #55FFFF; }
+.color-c { color: #FF5555; } .color-d { color: #FF55FF; } .color-e { color: #ffd61d; } .color-f { color: #FFFFFF; }
+
 /* TOPO */
 .site {
 	width: 100%;
@@ -60,13 +66,13 @@ img {
 
 /* MENU */
 .menu {
-	padding: 0 10%;
+	padding: 0 5%;
 }
 
 .menu ul li a {
 	float: left;
 	padding: 1%;
-	margin: 0 1%;
+	margin: 0 .25%;
 	color: white;
 	font-size: 17.5px;
 	text-decoration: none;
@@ -93,6 +99,7 @@ img {
 	padding: 2%;
 	width: 95%;
 	margin: 0 2.5%;
+	margin-top: 2.5%;
 	background: white;
 	border: 1px solid lightgray;
 	box-shadow: 0 0 8px #c5c5c5;
@@ -267,9 +274,255 @@ img {
 	text-decoration: none;
 }
 
+/* CARRINHO */
+.carrinho {
+	padding: 0;
+	width: 78%;
+	float: left;
+}
+
+.carrinho h1, .carrinho-checkout h1 {
+	margin: 0;
+	text-align: left;
+	font-size: 25px;
+	border-bottom: 1px solid black;
+	margin-bottom: 1%;
+}
+
+.carrinho-checkout {
+	width: 20%;
+	float: right;
+	padding: 0;
+}
+
+.carrinho-checkout-frete {
+	padding: 0;
+	margin: 4% 0;
+	text-align: left;
+}
+
+.carrinho-checkout-frete-title {
+	cursor: pointer;
+	background: #008AFF;
+	box-shadow: 0 0 8px #c5c5c5;
+	border-radius: 5px 5px 0 0;
+	padding: 1% 2%;
+}
+
+.carrinho-checkout-frete-title h1 {
+	border: none;
+	font-size: 15px;
+	color: white;
+}
+
+.carrinho-checkout-frete-cep {
+	float: left;
+	width: 100%;
+	padding: 3% 2%;
+	padding-bottom: 1%;
+	margin-bottom: 2%;
+	border: 1px solid #008AFF;
+}
+
+.checkout-frete-cep {
+	font-size: 15.5px;
+}
+
+.checkout-frete-cep input {
+	background: #008AFF;
+	width: 45%;
+	padding: 0 2%;
+	margin-bottom: 4%;
+}
+
+.checkout-frete-cep input[value] {
+	color: white;
+	text-align: left;
+}
+
+.checkout-frete-price {
+	font-size: 13px;
+	margin: 0;
+}
+
+.checkout-frete-price p {
+	margin: 0;
+}
+
+.checkout-frete-price p:last-child {
+	margin-top: -2%;
+}
+
+.carrinho-checkout-content {
+	padding: 0;
+	font-size: 14.5px;
+}
+
+.carrinho-checkout-content span {
+	float: left;
+	text-align: left;
+	width: 65%;
+}
+
+.carrinho-checkout-content p {
+	margin: 0;
+	float: right;
+	text-align: right;
+	width: 35%;
+}
+
+.carrinho-btn-checkout {
+	margin-top: 3.25%;
+	border: 1px solid green;
+	color: green;
+	font-size: 16px;
+	transition: all 1s;
+}
+
+.carrinho-btn-checkout:hover {
+	background: green;
+	color: white;
+}
+
+.carrinho-info {
+	padding: 0;
+	text-align: left;
+}
+
+.carrinho-info-content {
+	padding: 0;
+	width: 14%;
+	float: right;
+	font-size: 17.5px;
+	text-align: center;
+}
+
+.carrinho-info-content:first-child {
+	float: left;
+	width: 20%;
+	text-align: left;
+}
+
+.carrinho-info-content p {
+	margin: 0;
+}
+
+.carrinho-content {
+	border: 1px solid lightgray;
+	border-bottom: none;
+	padding: 0;
+	float: left;
+	margin-top: 0;
+}
+
+.carrinho-content:last-child {
+	border-bottom: 1px solid lightgray;
+}
+
+.carrinho-content-img {
+	padding: 0;
+	width: 8%;
+	float: left;
+}
+
+.carrinho-content-img img {
+	width: 95%;
+	padding: 10%;
+	border-right: 1px solid lightgray;
+}
+
+.carrinho-content-titulo {
+	float: left;
+	width: 50%;
+	padding: .5% .3%;
+	text-align: left;
+}
+
+.carrinho-content-titulo a {
+	border: none;
+	font-size: 15px;
+	color: black;
+}
+
+.carrinho-content-qnt {
+	float: left;
+	width: 15%;
+	padding: 2%;
+	padding-left: .5%;
+}
+
+.carrinho-content-qnt input {
+	width: 50%;
+	padding: 2%;
+	font-size: 16px;
+	border: 1px solid lightgray;
+	text-align: center;
+}
+
+.carrinho-content-price {
+	float: left;
+	width: 12%;
+	padding: 2%;
+	margin-top: .2%;
+}
+
+.carrinho-content-price p {
+	margin: 0;
+	font-size: 17px;
+	margin-left: 10%;
+}
+
+.carrinho-content-subtotal {
+	float: left;
+	width: 15%;
+	padding: 2%;
+	margin-top: .2%;
+}
+
+.carrinho-content-subtotal p {
+	margin: 0;
+	font-size: 17px;
+	margin-left: 12.5%;
+}
+
+.carrinho-cupom {
+	float: left;
+	width: 78%;
+	text-align: left;
+	padding: 1% 0;
+}
+
+.carrinho-cupom h1 {
+	margin: 0;
+	text-align: left;
+	font-size: 25px;
+	border-bottom: 1px solid black;
+	margin-bottom: 1%;
+}
+
+.carrinho-cupom input {
+	border: 1px solid lightgray;
+	padding: .5%;
+	font-size: 15px;
+}
+
+.cupom-btn {
+	padding: .5% 1.25%;
+	margin: 0 .5%;
+	font-size: 15px;
+	border: 1px solid green;
+	color: green;
+	transition: all 1s;
+}
+
+.cupom-btn:hover {
+	background: green;
+	color: white;
+}
+
 /* RODAPE */
 .rede-sociais {
-	padding: .5% 2%;
+	padding: 1% 2%;
 	background: #212121;
 }
 
@@ -295,7 +548,7 @@ img {
 
 .rede-sociais i {
 	float: right;
-	font-size: 35px;
+	font-size: 38px;
 	color: white;
 	margin: 0 .5%;
 	transition: all 1s;

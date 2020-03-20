@@ -24,19 +24,20 @@
 	</div>
 			
 	<div class="conteudo seguranca">
-		<p style="margin-bottom: 3%;">Segurança</p>
-		<img src="img/selo-cc-padrao.png">
+		<p style="margin-bottom: 3%;">Segurança</p><img src="img/selo-cc-padrao.png">
 	</div>
 			
 	<div class="conteudo certificado">
-		<p>Certificado</p>
-		<img src="img/ebit.png">
+		<p>Certificado</p><img src="img/ebit.png">
 	</div>
 			
 	<div class="conteudo empresa">
-		<p>E-Phone Imports</p>
-				
+		<p>E-Phone Imports</p>	
 		<span>Empresa de 2020 de venda de celulares e acessórios importados. Todos nossos produtos possuem 
 			qualidade e garantia de até 3 meses.</span>
 	</div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
