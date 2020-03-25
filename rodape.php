@@ -1,9 +1,9 @@
 <div class="conteudo rede-sociais">
 	<ul>
-		<li><a href="index.html">Início</a></li>
-		<li><a href="produtos.html">Produtos</a></li>
-		<li><a href="carrinho.html">Carrinho</a></li>
-		<li><a href="login.html">Entrar</a></li>
+		<li><a href="index.php">Início</a></li>
+		<li><a href="produtos.php">Produtos</a></li>
+		<li><a href="carrinho.php">Carrinho</a></li>
+		<li><a href="login.php">Entrar</a></li>
 	</ul>
 			
 	<a href=""><i class="fab fa-facebook-square"></i></a>
