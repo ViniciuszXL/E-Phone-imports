@@ -692,6 +692,144 @@ img {
 	color: white;
 }
 
+/* INFORMAÇÕES DO PRODUTO */
+.produto-informacao {
+	padding: 0;
+}
+
+.produto-informacao-imagem {
+	width: 50%;
+	float: left;
+}
+
+.produto-informacao-lateral {
+	width: 50%;
+	float: right;
+}
+
+.produto-informacao-imagem img {
+	float: left;
+	width: 100%;
+}
+
+.produto-informacao-lateral h1 {
+	text-align: left;
+	font-size: 27.5px;
+	margin: 0;
+	margin-bottom: 5%;
+}
+
+.produto-informacao-preco {
+	margin: 2% 0;
+	width: 100%;
+}
+
+.produto-informacao-preco h1 {
+	margin: 0;
+	font-size: 40px;
+	float: left;
+	width: 100%;
+}
+
+.produto-informacao-preco h2 {
+	text-align: left;
+	margin: 0;
+	font-size: 22.5px;
+	text-decoration: line-through;
+	width: 100%;
+}
+
+.produto-informacao-preco h3 {
+	font-size: 15px;
+	text-align: left;
+	float: left;
+	width: 50%;
+}
+
+.produto-informacao-preco span {
+	width: 100%;
+	float: left;
+	text-align: left;
+	margin-top: 2%;
+	font-size: 16px;
+}
+
+.produto-informacao-preco input {
+	float: left;
+	border: 1px solid green;
+	border-radius: 2.5px;
+	width: 15%;
+	text-align: center;
+	padding: .25%;
+	font-size: 17px;
+}
+
+.produto-informacao-preco button {
+	float: left;
+	width: 40%;
+	border-radius: 2.5px;
+	color: green;
+	border: 1px solid green;
+	font-size: 18px;
+	padding: 2% 1%;
+	transition: all 1s;
+}
+
+.produto-informacao-preco button:hover {
+	background: green;
+	color: white;
+}
+
+.produto-linha {
+	background: #008AFF;
+	padding: 1px;
+}
+
+.produto-descricao, .produto-descricao-geral {
+	padding: 0;
+	text-align: left;
+}
+
+.produto-descricao h1 {
+	text-align: left;
+	font-size: 25px;
+	margin: 0;
+	margin-top: 0;
+	background: #008AFF;
+	color: white;
+	padding: .4%;
+	cursor: pointer;
+}
+
+.produto-descricao h2 {
+	margin: 0;
+	margin-bottom: 1px;
+	margin-left: 5px;
+	font-size: 22px;
+}
+
+.produto-descricao p {
+	padding: 0 1%;
+	font-size: 16px;
+	margin: 0;
+}
+
+.produto-descricao-info {
+	margin: 1% 0;
+}
+
+.produto-descricao-geral {
+	border: 1px solid #008AFF;
+}
+
+.nao-encontrado h1 {
+	font-size: 80px;
+}
+
+.nao-encontrado p {
+	font-size: 40px;
+}
+
 /* RODAPE */
 .rede-sociais {
 	padding: 1% 2%;
@@ -770,8 +908,18 @@ img {
 	padding: 0;
 	text-align: left;
 	width: 100%;
-	font-size: 15px;
+	font-size: 16px;
 	margin-bottom: 1.5%;
+}
+
+.categoria-title a {
+	color: black;
+	text-decoration: none;
+}
+
+.categoria-title a:hover {
+	text-decoration: none;
+	color: black;
 }
 
 .categoria ul h1 {

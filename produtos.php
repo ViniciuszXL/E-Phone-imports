@@ -10,7 +10,10 @@
 	<div class="conteudo site">
 		<?php include "menu.php"; ?>
 		<div class="conteudo site-section">
-			<p class="conteudo categoria-title">Início > Produtos</p>
+			<p class="conteudo categoria-title">
+				<a href="index.php">Início</a> > 
+				<a href="produtos.php">Produtos</a>
+			</p>
 			
 			<div class="conteudo categoria">
 				<ul>
@@ -54,7 +57,7 @@
 					<h3>R$ 1.049,90</h3>
 					<span>10x de R$104,99 sem juros ou R$944,91 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="Redmi_Note_7.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 			<div class="conteudo categoria-produto">
 				<img src="img/produtos/Redmi_Note_8.png" title="Xiaomi Redmi Note 8">
@@ -67,7 +70,7 @@
 					<h3>R$ 1.179,90</h3>
 					<span>10x de R$117,99 sem juros ou R$1.061,91 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="404.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 			<div class="conteudo categoria-produto">
 				<img src="img/produtos/One_Plus_7T_Pro.png" title="OnePlus 7T Pro">
@@ -80,7 +83,7 @@
 					<h3>R$ 4.579,90</h3>
 					<span>10x de R$457,99 sem juros ou R$4.121,91 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="404.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 			<div class="conteudo categoria-produto">
 				<img src="img/produtos/Redmi_K20_Pro.png" title="Redmi K20 Pro">
@@ -93,7 +96,7 @@
 					<h3>R$ 1.789,90</h3>
 					<span>10x de R$178,99 sem juros ou R$1.610,91 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="404.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 			<div class="conteudo categoria-produto">
 				<img src="img/produtos/Huawei_P30_Pro.webp" title="Huawei P30 Pro">
@@ -106,7 +109,7 @@
 					<h3>R$ 3.884,90</h3>
 					<span>10x de R$388,49 sem juros ou R$3.496,41 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="404.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 			<div class="conteudo categoria-produto">
 				<img src="img/produtos/Xiaomi_Mi_Mix3.png" title="Xiaomi Mi Mix 3">
@@ -119,7 +122,7 @@
 					<h3>R$ 1.954,45</h3>
 					<span>10x de R$195,44 sem juros ou R$1.759,01 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="404.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 			<div class="conteudo categoria-produto">
 				<img src="img/produtos/OPPO_Find_X.png" title="OPPO Find X">
@@ -132,7 +135,7 @@
 					<h3>R$ 6.435,86</h3>
 					<span>10x de R$643,58 sem juros ou R$5.792,28 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="404.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 			<div class="conteudo categoria-produto">
 				<img src="img/produtos/Realme_5_Pro.png" title="Realme 5 Pro">
@@ -145,7 +148,7 @@
 					<h3>R$ 1.485,55</h3>
 					<span>10x de R$148,55 sem juros ou R$1.336,99 no boleto</span>
 				</div>
-				<a class="conteudo categoria-produto-btn" href="#" title="Ver detalhes do produto">Ver mais</a>
+				<a class="conteudo categoria-produto-btn" href="404.php" title="Ver detalhes do produto">Ver mais</a>
 			</div>
 		</div>
 	</div>

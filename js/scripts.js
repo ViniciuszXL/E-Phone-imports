@@ -1,7 +1,3 @@
-$(".carrinho-checkout-frete-title").click(function() {
-	updateIconAndShow('.carrinho-checkout-frete-cep', 'frete-icon');
-});
-
 $(".cupom-btn").click(function() {
 	let divName = 'cupom-notify';
 	let cupom_remove = document.getElementById('cupom-remove').innerHTML;
