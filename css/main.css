@@ -1031,6 +1031,7 @@ img {
 .registro-content-form {
 	float: left;
 	width: 100%;
+	margin: 0.8% 0;
 }
 
 .registro-content-form span {
@@ -1066,6 +1067,45 @@ img {
 .registro-button p {
 	margin: 1% 0;
 	font-size: 16px;
+}
+
+.registro-info {
+	width: 50%;
+	float: right;
+}
+
+.registro-info h1 {
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 2%;
+}
+
+.registro-info p {
+	font-size: 15px;
+}
+
+.registro-info a {
+	font-size: 18px;
+}
+
+.registro-notification-success {
+	display: none;
+	padding: 1.5% 0;
+    margin-bottom: 3%;
+    font-size: 20px;
+    border-radius: 5px;
+	background: green;
+	color: white;
+}
+
+.registro-notification-error {
+	display: none;
+	padding: 1.5% 0;
+    margin-bottom: 3%;
+    font-size: 20px;
+    border-radius: 5px;
+	background: red;
+	color: white;
 }
 
 /* LOGIN */
@@ -1130,4 +1170,177 @@ img {
 .login-button p {
 	margin: 1% 0;
 	font-size: 16px;
+}
+
+.login-notification-success {
+	display: none;
+	padding: 1.5% 0;
+    margin-bottom: 3%;
+    font-size: 20px;
+    border-radius: 5px;
+	background: green;
+	color: white;
+}
+
+.login-notification-error {
+	display: none;
+	padding: 1.5% 0;
+    margin-bottom: 3%;
+    font-size: 20px;
+    border-radius: 5px;
+	background: red;
+	color: white;
+}
+
+.login-info {
+	width: 50%;
+	float: left;
+}
+
+.login-info h1 {
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 2%;
+}
+
+.login-info p {
+	font-size: 15px;
+}
+
+.login-info a {
+	font-size: 18px;
+}
+
+/* PERFIL */
+.perfil {
+	padding: 1% 0;
+}
+
+.perfil h1 {
+	text-align: left;
+	font-size: 25px;
+	margin: 0;
+	border-bottom: 1px solid black;
+}
+
+.perfil-pedidos {
+	padding: 2% 0;
+	padding-bottom: 0;
+}
+
+.perfil-pedidos h1 {
+	font-size: 20px;
+	border: none;
+	color: white;
+	background: black;
+	padding: 1% 0;
+	padding-left: 0.5%;
+}
+
+.perfil-pedido {
+	padding: 0;
+}
+
+.perfil-pedido p {
+	margin: 0;
+	font-size: 20px;
+	margin-top: 1.5%;
+}
+
+.perfil-content {
+	border: 1px solid lightgray;
+	border-bottom: none;
+	padding: 0;
+	float: left;
+	margin-top: 0;
+}
+
+.perfil-content:last-child {
+	border-bottom: 1px solid lightgray;
+}
+
+.perfil-content-img {
+	padding: 0;
+	width: 8%;
+	float: left;
+}
+
+.perfil-content-img img {
+	width: 95%;
+	padding: 10%;
+	border-right: 1px solid lightgray;
+}
+
+.perfil-content-titulo {
+	float: left;
+	width: 50%;
+	padding: .5% .3%;
+	text-align: left;
+	margin-top: 0.5%;
+}
+
+.perfil-content-titulo a {
+	border: none;
+	font-size: 15px;
+	color: black;
+}
+
+.perfil-content-qnt {
+	float: left;
+	width: 30%;
+	padding: 2%;
+	padding-left: .5%;
+	font-size: 18px;
+	margin-top: 1%;
+	text-align: right;
+}
+
+.perfil-content-subtotal {
+	float: right;
+	width: 10%;
+	padding: 2%;
+	margin-top: 1%;
+}
+
+.perfil-content-subtotal p {
+	margin: 0;
+	font-size: 17px;
+	margin-left: 12.5%;
+}
+
+.perfil-info {
+	padding: 2% 0;
+	padding-bottom: 0;
+}
+
+.perfil-info h1 {
+	font-size: 20px;
+	border: none;
+	color: white;
+	background: black;
+	padding: 1% 0;
+	padding-left: 0.5%;
+}
+
+.perfil-info-section {
+	padding: .5% 0;
+	text-align: left;
+}
+
+.perfil-info-section h1 {
+	font-size: 19.5px;
+	background: none;
+	color: black;
+	padding: 0;
+	float: left;
+}
+
+.perfil-info-section p {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	text-align: left;
+	margin-left: .5%;
+	float: left;
+	text-decoration: underline;
 }

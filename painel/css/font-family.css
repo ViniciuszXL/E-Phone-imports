@@ -1,0 +1,29 @@
+/* BEBAS */
+@font-face { font-family: Bebas Neue; src: url('../fonts/BebasNeue-Regular.ttf'); }
+
+/* FUTURA */
+@font-face { font-family: Futura Book; src: url('../fonts/Futura/FuturaBookfont.ttf'); }
+@font-face { font-family: Futura Heavy; src: url('../fonts/Futura/FuturaHeavyfont.ttf'); }
+@font-face { font-family: Futura Light; src: url('../fonts/Futura/FuturaLightfont.ttf'); }
+@font-face { font-family: Futura Medium Bt; src: url('../fonts/Futura/futuramediumbt.ttf'); }
+@font-face { font-family: Futura Medium Condensed; src: url('../fonts/Futura/futuramediumcondensed.ttf'); }
+
+/* ROBOTO */
+@font-face { font-family: Roboto Condensed; src: url('../fonts/Roboto/Roboto-Condensed.ttf'); }
+@font-face { font-family: Roboto Light; src: url('../fonts/Roboto/Roboto-Light.ttf'); }
+@font-face { font-family: Roboto Regular; src: url('../fonts/Roboto/Roboto-Regular.ttf'); }
+
+/* ROBOTO SLAB */
+@font-face { font-family: Roboto Slab Bold; src: url('../fonts/Roboto/RobotoSlab-Bold.ttf'); }
+@font-face { font-family: Roboto Slab Light; src: url('../fonts/Roboto/RobotoSlab-Light.ttf'); }
+@font-face { font-family: Roboto Slab Regular; src: url('../fonts/Roboto/RobotoSlab-Regular.ttf'); }
+@font-face { font-family: Roboto Slab Thin; src: url('../fonts/Roboto/RobotoSlab-Thin.ttf'); }
+
+/* SANSATION */
+@font-face {font-family: Sansation; src: url('../fonts/Sansation_Light.ttf'); }
+
+/* POPPINS */
+@font-face {font-family: Poppins Regular; src: url('../fonts/poppins/Poppins-Regular.ttf'); }
+@font-face {font-family: Poppins Medium; src: url('../fonts/poppins/Poppins-Medium.ttf'); }
+@font-face {font-family: Poppins Bold; src: url('../fonts/poppins/Poppins-Bold.ttf'); }
+@font-face {font-family: Poppins SemiBold; src: url('../fonts/poppins/Poppins-SemiBold.ttf'); }
