@@ -2,12 +2,15 @@
 
 SESSION_START();
 require_once "Cliente.php";
+require_once "Produtos.php";
+require_once "Categorias.php";
 
 class Controller {
 	
 	public static function findSQL() {
 		return mysqli_connect("localhost", "root", "", "ephone-imports");
 	}
+	
 
 	public static function createTables($connect) {
 		$USERS_TABLE = "CREATE TABLE IF NOT EXISTS usuarios (
@@ -16,7 +19,7 @@ class Controller {
 			senha TEXT NOT NULL,
 			email VARCHAR(50) NOT NULL,
 			nome TEXT NOT NULL
-		)";
+		) ENGINE= InnoDB;";
 		if (!mysqli_query($connect, $USERS_TABLE))
 			die ("Ocorreu um erro: ".mysqli_error($connect));
 		
@@ -25,14 +28,14 @@ class Controller {
 			username VARCHAR(16) NOT NULL,
 			senha TEXT NOT NULL,
 			nome TEXT NOT NULL
-		)";
+		) ENGINE= InnoDB;";
 		if (!mysqli_query($connect, $FUNCIONARIOS_TABLE))
 			die ("Ocorreu um erro: ".mysqli_error($connect));
 		
 		$CATEGORIA_TABLE = "CREATE TABLE IF NOT EXISTS categorias (
 			id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 			nome VARCHAR(16) NOT NULL
-		)";
+		) ENGINE= InnoDB;";
 		if (!mysqli_query($connect, $CATEGORIA_TABLE))
 			die ("Ocorreu um erro: ".mysqli_error($connect));
 		
@@ -43,8 +46,10 @@ class Controller {
 			estoque INT NOT NULL,
 			descricao TEXT NOT NULL,
 			caracteristicas TEXT NOT NULL,
-			imagem TEXT NOT NULL
-		)";
+			imagem TEXT NOT NULL,
+			categoriaId INT NOT NULL,
+			FOREIGN KEY (`categoriaId`) REFERENCES `categorias`(`id`)
+		) ENGINE= InnoDB;";
 		if (!mysqli_query($connect, $PRODUTO_TABLE))
 			die ("Ocorreu um erro: ".mysqli_error($connect));
 		
@@ -53,7 +58,7 @@ class Controller {
 			produtoId INT NOT NULL,
 			FOREIGN KEY (userId) REFERENCES usuarios(id),
 			FOREIGN KEY (produtoId) REFERENCES produtos(id)
-		)";
+		) ENGINE= InnoDB;";
 		if (!mysqli_query($connect, $CARRINHO_TABLE))
 			die ("Ocorreu um erro: ".mysqli_error($connect));
 		
@@ -61,7 +66,7 @@ class Controller {
 			id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 			situacao TEXT NOT NULL,
 			situacaoName TEXT NOT NULL
-		)";
+		) ENGINE= InnoDB;";
 		if (!mysqli_query($connect, $compras_categoria))
 			die("Error: " . mysqli_error($connect));
 		
@@ -77,7 +82,7 @@ class Controller {
 			FOREIGN KEY (userId) REFERENCES usuarios(id),
 			FOREIGN KEY (produtoId) REFERENCES produtos(id),
 			FOREIGN KEY (situacao) REFERENCES compras_categoria(id)
-		)";
+		) ENGINE= InnoDB;";
 		if (!mysqli_query($connect, $compras))
 			die("Error: " . mysqli_error($connect));
 	}
@@ -88,8 +93,19 @@ class Controller {
 	}
 	
 	public static function formatMoney($value) {
-		setlocale(LC_MONETARY, "pt-br");
-		return money_format("%i", $value);
+		return "R$" . number_format($value, 2);
+	}
+	
+	public static function formatMultiple($value) {
+		$newValue = $value / 10;
+		return formatMoney($newValue);
+	}
+	
+	public static function formatPercentage($value) {
+		$percentage = -10;
+		$numberToRemove = ($value / 100) * $percentage;
+		$newNumber = $value + $numberToRemove;
+		return Controller::formatMoney($newNumber);
 	}
 
 	public static function findValueInDatabase($value, $table, $argument, $id) {

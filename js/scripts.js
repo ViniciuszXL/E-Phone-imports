@@ -1,3 +1,8 @@
+function pesquisar() {
+	let pesquisa = document.getElementById('pesquisa').value;
+	window.location.href = "pesquisa.php?pesquisa=" + pesquisa;
+}
+
 $(".cupom-btn").click(function() {
 	let divName = 'cupom-notify';
 	let cupom_remove = document.getElementById('cupom-remove').innerHTML;

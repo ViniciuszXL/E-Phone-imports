@@ -36,6 +36,7 @@ class Cliente {
 					$returns[$id]['quantidade'] = $quantidade;
 					$returns[$id]['total'] = $total;
 					$returns[$id]['situacao'] = $situacao;
+					$id = $id + 1;
 				}
 			}
 		}
@@ -44,6 +45,22 @@ class Cliente {
 		return json_encode($returns, JSON_UNESCAPED_UNICODE);
 	}
 
+	public static function deleteAccount() {
+		$connect = Controller::findSQL();
+		if (!$connect)
+			return false;
+		
+		$select = "DELETE FROM `compras` WHERE `userId`=?;";
+		$stmt = mysqli_stmt_init($connect);
+		if (mysqli_stmt_prepare($stmt, $select)) {
+			mysqli_stmt_bind_param($stmt, "s", $_SESSION['userId']);
+			mysqli_stmt_execute($stmt);
+			$_SESSION = array();
+		}
+		
+		mysqli_close($connect);
+		return true;
+	}
 
 }
 

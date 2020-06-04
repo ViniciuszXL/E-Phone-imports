@@ -207,6 +207,11 @@ img {
 	border-bottom: 1px solid black;
 }
 
+.produtos p {
+	margin: 2% 0;
+	font-size: 22px;
+}
+
 .produto {
 	padding: 0;
 	float: left;
@@ -1343,4 +1348,17 @@ img {
 	margin-left: .5%;
 	float: left;
 	text-decoration: underline;
+}
+
+/* PESQUISA */
+.pesquisa-section {
+	padding: 0;
+}
+
+.pesquisa-section h1 {
+	font-size: 18.5px;
+	text-align: left;
+	margin: 0;
+	border-bottom: 1px solid black;
+	margin-bottom: 1%;
 }

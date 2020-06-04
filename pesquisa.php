@@ -3,38 +3,20 @@
 
 <head>
 	<?php include "topo.php"; ?>
-    <title>E-Phone Imports - Início</title>
+    <title>E-Phone Imports - Pesquisa</title>
 </head>
 
 <body>
 	<div class="conteudo site">
 		<?php include "menu.php"; ?>
 		<div class="conteudo site-section">
-			<div class="conteudo pesquisa">
-				<input id="pesquisa" type="text" placeholder="Digite para pesquisar">
-				<button onclick="pesquisar();">
-					<i class="fa fa-search"></i>
-				</button>
-			</div>
-			
-			<div class="conteudo icones">
-				<a href="#"><i class="fab fa-facebook-square"></i></a>
-				<a href="#"><i class="fab fa-twitter-square"></i></a>
-				<a href="#"><i class="fab fa-whatsapp-square"></i></a>
-			</div>
-			
-			<div class="conteudo imagens">
-				<img src="img/other-background.jpg">
-			</div>
-			
-			<div class="conteudo produtos">
-				<h1>Produtos</h1>
-				<?php $array = Produtos::getProducts(true); $decoded = json_decode($array, true); 
+			<div class="conteudo pesquisa-section">
+				<?php $array = Produtos::getProductsByName(); $decoded = json_decode($array, true); 
 						$resultado = $decoded['resultado']; $value = $decoded['mensagem']; ?>
 						
 				<?php if ($resultado == "erro") { ?>
-					<p><?php echo $value; ?></p>
-				<?php } else { $quantidade = $decoded['quantidade']; $i; for ($i = 1; $i <= $quantidade; $i++) { ?>
+					<h1><?php echo $value; ?></h1>
+				<?php } else { $quantidade = $decoded['quantidade']; $i; for ($i = 0; $i < $quantidade; $i++) { ?>
 					<div class="conteudo produto">
 						<img src="<?php echo $decoded[$i]['imagem']; ?>">
 						<div class="conteudo produto-info">
