@@ -50,7 +50,7 @@ class Cliente {
 		if (!$connect)
 			return false;
 		
-		$select = "DELETE FROM `compras` WHERE `userId`=?;";
+		$select = "DELETE FROM `usuarios` WHERE `id`=?;";
 		$stmt = mysqli_stmt_init($connect);
 		if (mysqli_stmt_prepare($stmt, $select)) {
 			mysqli_stmt_bind_param($stmt, "s", $_SESSION['userId']);
